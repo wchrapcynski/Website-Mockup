@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#menu {
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    margin: 0 10px;
+}
