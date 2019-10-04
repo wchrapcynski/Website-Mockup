@@ -5,6 +5,7 @@
 body {
     margin: 0 auto;
     font-family: 'Playfair Display', serif;
+    height: 100vh;
 }
 
 .content {
@@ -45,6 +46,13 @@ nav {
     height: 40px;
 }
 
+.burger {
+    visibility: hidden;
+    background-image: url('../images/burger.png');
+    height: 73px;
+    width: 88px;
+}
+
 .menu {
     display: flex;
     justify-content: space-between;
@@ -75,7 +83,7 @@ p {
     line-height: 1.5;
 }
 
-.topImage {
+.hero {
     background-image: url('../images/top.png');
     height: 600px;
     background-size: 1062px 509px;
@@ -231,11 +239,53 @@ footer {
         display: none;
     }
 
+    .burger {
+        visibility: visible;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 20px;
+    }
+
     .title {
         padding: 0 25px;
+        font-size: 50px;
     }
 
     main {
         padding: 0 50px;
+    }
+
+    footer, .signUp, .hero, .content, .topBar, .bottom     {
+        width: 90vh;
+    }
+
+    body {
+        font-size: 24px;
+    }
+
+    .footerLeft {
+        width: 400px;
+    }
+
+    .footerRight {
+        font-size: 0;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .eMail h3 {
+        margin-bottom: 40px;
+    }
+
+    .signUp h1 {
+        margin-bottom: 30px;
+    }
+
+    .loadMore {
+        font-size: 26px;
+        width: 180px;
+        height: 80px;
     }
 }
