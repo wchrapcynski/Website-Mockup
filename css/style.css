@@ -2,126 +2,110 @@
   box-sizing: border-box;
 }
 
-body {
+body, html {
     margin: 0 auto;
     font-family: 'Playfair Display', serif;
-    height: 100vh;
-}
-
-.content {
-    /* width: 80%; */
-    margin: 0 auto;
-    max-width: 1062px;
-    min-width: 576px;
-}
-
-.topBar {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background: white;
 }
 
 header {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    height: 75px;
-    margin: 0 auto;
+    position: sticky;
+    top: 0;
     background-color: white;
-    width: 80%;
-    max-width: 1062px;
-    min-width: 576px;
-}
-
-.title {
-    margin-bottom: 0;
-    font-family: 'Inconsolata', monospace;
-    font-weight: 100;
-    letter-spacing: 4px;
+    z-index: 1;
 }
 
 nav {
-    width: 600px;
-    height: 40px;
-}
-
-.burger {
-    visibility: hidden;
-    background-image: url('../images/burger.png');
-    height: 73px;
-    width: 88px;
-}
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    margin-bottom: 10;
-    text-transform: uppercase;
-}
-
-a {
-    color: #7D7E7F;
-    font-weight: bold;
-    text-decoration: none;
+    max-height: 6vh;
 }
 
 h1 {
     color: #5E5F60;
+    font-size: 1.7em;
+    letter-spacing: 1px;
 }
 
 h3  {
     font-family: 'Inconsolata', monospace;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1.1em;
     color: #BABAB9;
 }
 
-p {
-    color: #7E7F80;
-    line-height: 1.5;
+.title {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 100;
+    letter-spacing: 4px;
+    font-size: 2.7em;
 }
 
 .hero {
     background-image: url('../images/top.png');
-    height: 600px;
-    background-size: 1062px 509px;
-    background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 75px;
-}
-
-main {
-    max-width: 900px;
-    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    max-height: 509px;
+    height: 50vw;
+    width: 100%;
 }
 
 .topText {
-    margin-bottom: 100px
+    margin: 8vh auto;
+    width: 75vw;
+}
+
+.topBar {
+    margin: 0 auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    max-width: 83vw;
+}
+
+.menu {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    min-width: 45vw;
+}
+
+.burger {
+    visibility: hidden;
+    background-image: url('../images/burger.png');
+    background-repeat: no-repeat;
+    width: 49px;
+    height: 50px;
+}
+
+main, .content {
+    margin: 0 auto;
+    max-width: 75vw;
 }
 
 .photoCardBlock {
-    max-width: 900px;
-    margin: 0 auto 100px auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 10vh;
 }
 
 .blockOne, .blockTwo {
-    margin: 0 auto;
-}
-
-.blockOne {
-    padding-right: 30px;
-}
-.blockTwo {
-    padding-left: 30px;
+    max-width: 35vw;
+    max-height: 50vh;
 }
 
 .photoOne, .photoTwo, .photoThree, .photoFour, .photoFive, .photoSix {
-    height: 280px;
-    width: 420px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 66.66%;
+    overflow: hidden;
+    height: 0;
 }
 
 .photoOne {
@@ -148,40 +132,41 @@ main {
     background-image: url('../images/lifestyle4.png');;
 }
 
-.photoText {
-    width: 420px;
+a {
+    color: #7D7E7F;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .signUp {
-    width: 100%;
-    height: 250px;
     background-color: #F2F3F4;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 100px;
     flex-direction: column;
+    justify-content: center;
+    height: 20vh;
+    margin-bottom: 10vh;
 }
 
 .signUp h1 {
-    margin-bottom: 50px;
+    font-size: 2.2em;
+    margin: 0;
+}
+
+.signUp h3 {
+    font-size: 1em;
+    color: #797A7B;
 }
 
 .eMail {
-    width: 400px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #959696;
-    margin-bottom: 35px;
-}
-
-.eMail h3, .arrow    {
-    margin-bottom: 5px;
-}
-
-.bottom {
-    padding: 0 0 100px 0;
+    flex-direction: row;
+    width: 35vw;
+    height: 2.5vh;
+    margin-top: 2vh;
+    border-bottom: 1px solid #797A7B;
 }
 
 .loadMore {
@@ -192,22 +177,25 @@ main {
     width: 160px;
     height: 60px;
     padding: 10px;
-    margin: 0 auto;
-    font-size: 20px;
+    margin: 10vh auto 8vh auto;
+    font-size: 1.3em;
     color: #606162;
 }
 
+
 footer {
     width: 100%;
-    height: 100px;
+    height: 7vh;
     background-color: #F2F3F4;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 1vh;
 }
 
 .footerLeft {
-    width: 500px;
+    width: 25vw;
+    text-align: left;
 }
 
 .footerLinks {
@@ -219,73 +207,102 @@ footer {
 
 .footerLinks a {
     color: #5E5F60;
+    padding-right: 10px
 }
 
 .footerRight {
     word-spacing: 15px;
-    padding-right: 30px;
+    width: 40vw;
+    text-align: right;
+    padding-right: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-@media screen and (max-width: 600px) {
+.footerRight img {
+    padding-left: 10px;
+}
+
+@media only screen and (max-width: 1000px){
+
     .photoCardBlock {
         flex-direction: column;
+        margin-bottom: 5vh;
+        align-items: center;
     }
 
     .blockOne, .blockTwo {
-        padding: 0;
+        max-width: 55vw;
+        max-height: 55vh;
     }
 
+    .blockOne {
+        margin-bottom: 5vh;
+    }
+
+    .signUp img {
+        display: none;
+    }
+
+    .eMail {
+        height: 5em;
+    }
+}
+
+@media only screen and (max-width: 800px){
+
+    footer {
+        font-size: 1.3vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
     .menu {
         display: none;
     }
 
+    .topBar {
+        align-items: center;
+    }
+
     .burger {
         visibility: visible;
-        display: flex;
-        justify-content: flex-end;
-        padding: 0 20px;
     }
 
-    .title {
-        padding: 0 25px;
-        font-size: 50px;
+    .blockOne, .blockTwo {
+        max-width: 55vw;
+        max-height: 100vh;
     }
 
-    main {
-        padding: 0 50px;
+    .signUp img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 450px) and (max-height: 700px) {
+
+    .blockOne, .blockTwo {
+        max-width: 90vw;
+        min-height: 90vh;
     }
 
-    footer, .signUp, .hero, .content, .topBar, .bottom     {
-        width: 90vh;
-    }
-
-    body {
-        font-size: 24px;
-    }
-
-    .footerLeft {
-        width: 400px;
-    }
-
-    .footerRight {
-        font-size: 0;
-    }
-
-    h3 {
-        font-size: 24px;
-    }
-
-    .eMail h3 {
-        margin-bottom: 40px;
+    footer {
+        font-size: 1.9vh;
+        padding: 0 10px;
+        height: 9vh;
     }
 
     .signUp h1 {
-        margin-bottom: 30px;
+        font-size: 1em;
     }
 
-    .loadMore {
-        font-size: 26px;
-        width: 180px;
-        height: 80px;
+    .signUp h3 {
+        font-size: 0.7em;
+    }
+
+    .eMail {
+        height: 9vh;
+        text-align: center;
     }
 }
