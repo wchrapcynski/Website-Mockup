@@ -43,7 +43,7 @@ h3  {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    position: relative;
+    position: relat ive;
     max-height: 509px;
     height: 50vw;
     width: 100%;
@@ -136,6 +136,13 @@ a {
     color: #7D7E7F;
     font-weight: bold;
     text-decoration: none;
+    transition: all 500ms ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-shadow:
+    0.03em 0em 0 #000;
 }
 
 .signUp {
@@ -185,7 +192,7 @@ a {
 
 footer {
     width: 100%;
-    height: 5em;
+    height: 5em    ;
     background-color: #F2F3F4;
     display: flex;
     align-items: center;
@@ -235,7 +242,7 @@ footer {
 
     .blockOne, .blockTwo {
         max-width: 55vw;
-        max-height: 55vh;
+        max-height: 90vh;
     }
 
     .blockOne {
