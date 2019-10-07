@@ -77,6 +77,11 @@ h3  {
     background-repeat: no-repeat;
     width: 49px;
     height: 50px;
+    transition: all 500ms ease;
+}
+
+.burger:hover {
+    transform: rotate(90deg);
 }
 
 main, .content {
