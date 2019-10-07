@@ -72,7 +72,7 @@ h3  {
 }
 
 .burger {
-    visibility: hidden;
+    display: none;
     background-image: url('../images/burger.png');
     background-repeat: no-repeat;
     width: 49px;
@@ -280,7 +280,7 @@ footer {
     }
 
     .burger {
-        visibility: visible;
+        display: block;
     }
 
     .blockOne, .blockTwo {
